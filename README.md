@@ -17,4 +17,4 @@ This is a personal portfolio website for a frontend developer.
 
 ## Setup
 
-Simply open `pages/index.html` in your browser to view the site.
+Simply open `index.html` in your browser to view the site.
