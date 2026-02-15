@@ -1,0 +1,251 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-main: 'DM Sans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --color-dark: #171718;
+  --color-light: #fff;
+  --accent-color: #5C62EC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-family: var(--font-main);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 20px 0px;
+  border-bottom: 1px solid #26292D;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  min-height: 9vh;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+
+.nav-list li a {
+  font-weight: 500;
+  color: var(--color-light);
+}
+
+.nav-list-current-page {
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.logo {
+  color: var(--color-light);
+  font-size: 24px;
+  font-family: var(--font-secondary);
+}
+
+.logo strong {
+  font-weight: 700;
+}
+
+.banner {
+  text-align: center;
+  background-color: var(--color-dark);
+  padding: 182px 0;
+  min-height: 91vh;
+  width: 100%;
+  background-image: url(../img/bg-banner.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 620px;
+}
+
+.banner-title {
+  color: var(--color-light);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+.banner-title-name {
+  color: var(--accent-color);
+}
+
+.banner-title-under {
+  color: var(--color-light);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.banner-subtitle {
+  color: var(--color-light);
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 100;
+  margin-top: 20px;
+}
+
+.download-cv-btn {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  color: var(--accent-color);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.card {
+  width: 370px;
+  height: 350px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+  padding-left: 15px;
+  letter-spacing: -0.5px; 
+  color: var(--color-dark);
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background-color: var(--color-dark);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 27px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.title-project {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  color: var(--accent-color);
+}
+
+.project-img img {
+  display: flex;
+  justify-self: center;
+  width: 865px;
+  height: 650px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.gh-repo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  column-gap: 10px;
+  border: 1px solid var(--color-dark);
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.gh-repo-btn img {
+  width: 24px;
+  height: 23px;
+  border: none;
+}
+
+.gh-repo-btn-text {
+  color: var(--color-dark);
+}
+
+.content-list-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: var(--color-dark);
+}
+
+.content-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  width: 570px;
+}
+
+.mb-large {
+  margin-bottom: 360px;
+}
+  
+.email {
+  color: var(--accent-color);
+  margin-bottom: 250px;
+}
